@@ -27,7 +27,14 @@ export default {
 </script>
     
 <style scoped>
+    ul{
+        display: flex;
+        text-transform: uppercase;
+        
+    }
     ul li {
         list-style: none;
+        padding: 10px;
+        border-bottom: 2px solid blue;
     }
 </style>

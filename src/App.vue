@@ -16,8 +16,8 @@ export default {
     AppMain
   }
 }
-
 </script>
+
 <style>
 body{
   margin: 0;

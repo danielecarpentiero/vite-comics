@@ -1,5 +1,5 @@
 <template>
-    <a :href="logoLink"><img :src="assets/img/dc-logo.png" alt=""></a>
+    <a :href="logoLink"><img :src="logoSrc" :alt="logoAlt"></a>
 </template>
 
 <script>
@@ -7,7 +7,7 @@ export default {
     name: 'Logo',
     data () {
         return {
-            logoSrc: "../../assets/img/dc-logo.png",
+            logoSrc: "src/assets/img/dc-logo.png",
             logoAlt: "CD",
             logoLink: "#",
         }
@@ -15,8 +15,5 @@ export default {
 }
 </script>
 
-<style scoped>
-    img {
-        width: 10%;
-    }
+<style scoped>  
 </style>

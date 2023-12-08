@@ -20,5 +20,9 @@ export default {
 <style scoped>
     header{
         display: flex;
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
     }
 </style>
