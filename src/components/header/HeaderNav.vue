@@ -37,10 +37,14 @@ export default {
         height: 100%;
         li  {
             display: block;
+            color: $darker--icon--bg-color;
+            font-weight: 700;
             list-style: none;
             padding: 0 1.875rem;
             line-height: 100px;
+            cursor: pointer;
             &:hover {
+                color: $complementary--color;
                 border-bottom: 5px solid $complementary--color;     
             }}
     };

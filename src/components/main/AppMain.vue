@@ -1,18 +1,30 @@
 <template>
-    <div class="app-main">
-    </div>
+    <main>
+        <JumboMain/>
+        <div class="ads">
+            <AdsMain/>
+        </div>
+        
+    </main>
 </template>
 
 <script>
+import JumboMain from './JumboMain.vue';
+import AdsMain from './AdsMain.vue';
 export default {
     name: 'AppMain',
+    components: {
+        JumboMain,
+        AdsMain,
+    }
 }
 </script>
 
 <style scoped lang="scss">
-@use "../../styles/variables.scss" as *;
-.app-main {
-    background-color: #b4b4b4;
-    color: #fff;
-    padding: 20px; }
+@use 'src/styles/variables.scss' as *;
+        .ads{
+            display: flex;
+            justify-content: center;
+            background-color: $complementary--color;
+        }
 </style>

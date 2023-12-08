@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
+  @use "./styles/variables.scss" as *;
 body{
   margin: 0;
   padding: 0;
@@ -26,5 +27,4 @@ body{
   font-family: 'Asap Condensed', sans-serif;;
 }
 
-  @use "styles/variables.scss" as *;
 </style>
