@@ -9,7 +9,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@use "../../styles/variables.scss" as *;
 .app-main {
     background-color: #b4b4b4;
     color: #fff;

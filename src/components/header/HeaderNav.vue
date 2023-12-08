@@ -26,15 +26,22 @@ export default {
 }
 </script>
     
-<style scoped>
-    ul{
+<style scoped lang="scss">
+
+ @use "../../styles/variables.scss" as *;
+
+    ul {
         display: flex;
+        justify-content: center;
         text-transform: uppercase;
-        
-    }
-    ul li {
-        list-style: none;
-        padding: 10px;
-        border-bottom: 2px solid blue;
-    }
+        height: 100%;
+        li  {
+            display: block;
+            list-style: none;
+            padding: 0 1.875rem;
+            line-height: 100px;
+            &:hover {
+                border-bottom: 5px solid $complementary--color;     
+            }}
+    };
 </style>
