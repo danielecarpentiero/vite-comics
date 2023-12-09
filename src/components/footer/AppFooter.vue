@@ -1,19 +1,20 @@
 <template>
-    <div class="app-footer">
-        <p>Footer</p>
-    </div>
+    <UpperFooter/>
+    <LowerFooter/>
 </template>
 
 <script>
+import UpperFooter from './UpperFooter.vue';
+import LowerFooter from './LowerFooter.vue';
 export default {
     name: 'AppFooter',
+    components: {
+        UpperFooter,
+        LowerFooter,
+    }
 }
 </script>
 
 <style scoped>
-.app-footer {
-    background-color: #b4b4b4;
-    color: #fff;
-    padding: 20px;
-}
+    
 </style>
