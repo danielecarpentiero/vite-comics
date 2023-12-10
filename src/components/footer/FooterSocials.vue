@@ -45,11 +45,24 @@ export default {
             ]
         }
     }
-   
-    // Add your component logic here
-}
+   }
 </script>
 
 <style scoped>
-/* Add your component styles here */
+    .footer-socials {
+        display: flex;
+        li{
+            display: flex;
+        }
+        
+    }
+    h3 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    li{
+        list-style: none;
+    }
 </style>

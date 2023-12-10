@@ -5,18 +5,20 @@
 <script>
 export default {
     name: 'FooterButton',
-    props: {
-        buttonText: 'Sign up now!'
-    }
+    data() {
+        return {
+            buttonText: 'sign up now!',
+        };
+    },
 }
 </script>
 
 <style scoped lang="scss">
 @use 'src/styles/variables.scss' as *;
-button {
+    button {
     background-color: $lighter--secondary--color;
     border: 2px solid $complementary--color;
     text-transform: uppercase;
-    
-}
+    color: $complementary--color;
+    }
 </style>

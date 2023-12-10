@@ -1,6 +1,10 @@
 <template>
-   <FooterButton/>
-    <FooterSocials/>
+    <footer>
+        <div class="container">
+            <FooterButton/>
+             <FooterSocials/>
+        </div>
+    </footer>
 </template>
 
 <script>
@@ -17,4 +21,12 @@ export default {
 
 <style scoped lang="scss">
 @use 'src/styles/variables.scss' as *;
+footer {
+    background-color: $lighter--primary--color;
+    width: 100%;
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+}
 </style>
