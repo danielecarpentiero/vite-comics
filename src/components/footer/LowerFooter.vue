@@ -22,9 +22,14 @@ export default {
 <style scoped lang="scss">
 @use 'src/styles/variables.scss' as *;
 footer {
-    background-color: $lighter--primary--color;
+    background-color: $lighter--secondary--color;
     width: 100%;
-        .container{
+    
+    .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 75%;
             display: flex;
             flex-direction: column;
         }
