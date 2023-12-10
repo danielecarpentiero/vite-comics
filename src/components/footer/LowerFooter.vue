@@ -1,16 +1,20 @@
 <template>
-    <footer class="lower-footer">
-        <!-- Footer content goes here -->
-    </footer>
+   <FooterButton/>
+    <FooterSocials/>
 </template>
 
 <script>
+import FooterButton from './FooterButton.vue';
+import FooterSocials from './FooterSocials.vue';
 export default {
     name: 'LowerFooter',
-    // Component options go here
+    components: {
+        FooterButton,
+        FooterSocials,
+    },
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@use 'src/styles/variables.scss' as *;
 </style>
