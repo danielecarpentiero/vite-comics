@@ -1,15 +1,11 @@
 <template>
   <div class="slider">
     <ul>
-      <li>
-        <Slide
-          v-for="slide in slides"
-          :slide="slide.thumb"
-          :title="slide.series"
-          :genre="slide.type"
-        />
+      <li v-for="slide in slides">
+        <Slide :slide="slide.thumb" :title="slide.series" :genre="slide.type" />
       </li>
     </ul>
+    <div class="btn">load more</div>
   </div>
 </template>
 
@@ -111,17 +107,40 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@use "src/styles/variables.scss" as *;
 .slider {
+  padding-top: 20px;
   width: 100%;
-  margin: 0 auto;
-  flex-wrap: wrap;
+  background-color: $secondary--color;
+  padding: 20px 0;
   ul {
-    list-style: none;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     li {
-      width: calc(100% / 6);
-      display: flex;
+      width: calc(100% / 6 - 20px);
+      margin: 10px;
+      list-style: none;
+      text-align: center;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $primary--color;
     }
+  }
+  .btn {
+    background-color: $complementary--color;
+    text-transform: uppercase;
+    padding: 10px;
+    color: $primary--color;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    bottom: -20px;
+    left: 10%;
+    font-weight: 700;
+    cursor: pointer;
   }
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <img :src="slide" alt="" />
-    <h3>{{ title }}</h3>
-  </div>
+  <figure>
+    <img :src="slide" alt="slide" />
+  </figure>
+  <h3>{{ title }}</h3>
 </template>
 
 <script>
@@ -18,9 +18,15 @@ export default {
 
 <style scoped lang="scss">
 @use "src/styles/variables.scss" as *;
-img {
-  width: 200px;
+
+figure {
   height: 200px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: top;
   display: block;
